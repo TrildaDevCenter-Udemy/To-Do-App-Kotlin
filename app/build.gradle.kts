@@ -75,7 +75,7 @@ android {
 
     buildFeatures {
         aidl = false
-        buildConfig = true
+        buildConfig = false
         compose = true
         prefab = false
         renderScript = false
@@ -123,16 +123,16 @@ dependencies {
     implementation(libs.material)
 
 
-    androidTestImplementation(libs.androidx.work.testing)
+
     implementation (libs.androidx.work.mutiprocess)
 
     implementation (libs.navigation.fragment.ktx)
 
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.appcompat)
 
     // Compose
-    implementation(platform(libs.androidx.compose.bom))
+    //implementation(platform(libs.androidx.compose.bom))
 
     implementation(libs.androidx.compose.foundation)
     implementation(libs.androidx.compose.ui)
@@ -147,7 +147,7 @@ dependencies {
     // compose layouts
     // compose constraints layout
     implementation (libs.androidx.constraintlayout.core)
-    implementation (libs.androidx.constraintlayout.compose)
+    //implementation (libs.androidx.constraintlayout.compose)
     implementation(libs.androidx.constraintlayout)
 
     // tooling for compose previews in android studio
@@ -188,7 +188,7 @@ dependencies {
     // hilt
     implementation (libs.androidx.hilt.android)
     ksp (libs.androidx.hilt.android.compiler)
-    implementation (libs.androidx.hilt.navigation.compose)
+    //implementation (libs.androidx.hilt.navigation.compose)
     implementation (libs.androidx.hilt.work)
 
     // add DataStore preferences
@@ -224,7 +224,7 @@ dependencies {
 
     // Coil image lib in kotlin
     implementation(libs.coil.kt)
-    implementation(libs.coil.kt.compose)
+    //implementation(libs.coil.kt.compose)
     implementation(libs.coil.kt.svg)
     implementation(libs.coil.kt.gif)
 
@@ -260,7 +260,7 @@ dependencies {
 
 
     // instrumented test ( androidTest)
-    androidTestImplementation(platform(libs.androidx.compose.bom))
+    //androidTestImplementation(platform(libs.androidx.compose.bom))
 
     androidTestImplementation(libs.androidx.test.ext.ktx)
     androidTestImplementation(libs.androidx.test.espresso.core)

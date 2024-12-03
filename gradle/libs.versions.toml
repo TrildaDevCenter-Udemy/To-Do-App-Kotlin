@@ -5,10 +5,13 @@ androidDesugarJdkLibs = "2.1.2"
 # AGP and tools should be updated together
 androidGradlePlugin = "8.7.2"
 androidTools = "34.0.0"
+
 androidxActivity = "1.9.3"
 androidxAppCompat = "1.7.0"
-androidxBrowser = "1.8.0"
 androidxArchCore = "2.2.0"
+
+androidxBrowser = "1.8.0"
+
 androidxCameraX = "1.4.0"
 androidxComposeBom = "2024.11.00"
 androidxComposeMaterialAndroidIcon = "1.7.5"
@@ -20,14 +23,22 @@ androidxConstraintLayoutCore = "1.1.0"
 androidxConstraintLayoutCompose = "1.1.0"
 androidxCore = "1.15.0"
 androidxCoreSplashscreen = "1.0.1"
+
 androidxDataStore = "1.1.1"
+
 androidxEspresso = "3.6.1"
+
 androidxHiltNavigationCompose = "1.2.0"
+
 androidxLifecycle = "2.8.7"
+
 androidxMacroBenchmark = "1.3.3"
 androidxMetrics = "1.0.0-beta01"
+
 androidxNavigation = "2.8.4"
+
 androidxProfileinstaller = "1.4.1"
+
 androidxTestCore = "1.6.1"
 androidxTestExt = "1.2.1"
 androidxTestRules = "1.6.1"
@@ -123,6 +134,7 @@ accompanist-testharness = { group = "com.google.accompanist", name = "accompanis
 android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "androidDesugarJdkLibs" }
 androidx-arch-core-common = { group = "androidx.arch.core", name = "core-common", version.ref = "androidxArchCore" }
 androidx-arch-core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "androidxArchCore"}
+androix-activity-ktx = { group = "androidx.activity", name="activity-ktx", version.ref = "androidxActivity" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppCompat" }
 androidx-benchmark-macro = { group = "androidx.benchmark", name = "benchmark-macro-junit4", version.ref = "androidxMacroBenchmark" }
@@ -146,7 +158,7 @@ androidx-compose-material3 = { group = "androidx.compose.material3", name = "mat
 androidx-compose-material3-adaptive = { group = "androidx.compose.material3.adaptive", name = "adaptive", version.ref = "androidxComposeMaterial3Adaptive" }
 androidx-compose-material3-adaptive-layout = { group = "androidx.compose.material3.adaptive", name = "adaptive-layout", version.ref = "androidxComposeMaterial3Adaptive" }
 androidx-compose-material3-adaptive-navigation = { group = "androidx.compose.material3.adaptive", name = "adaptive-navigation", version.ref = "androidxComposeMaterial3Adaptive" }
-androidx-compose-material3-windowSizeClass = { group = "androidx.compose.material3", name = "material3-window-size-class" }
+androidx-compose-material3-windowSizeClass = { group = "androidx.compose.material3", name = "material3-window-size-class", version.ref = "material3" }
 androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime" }
 androidx-compose-runtime-live-data = { group = "androidx.compose.runtime", name = "runtime-livedata", version = "1.7.5" }
 
@@ -168,6 +180,7 @@ androidx-constraintlayout-compose = { group = "androidx.constraintlayout", name 
 
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
 androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "androidxCoreSplashscreen" }
+
 
 androidx-dataStore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "androidxDataStore" }
 androidx-dataStore-core = { group = "androidx.datastore", name = "datastore-preferences-core", version.ref = "androidxDataStore" }

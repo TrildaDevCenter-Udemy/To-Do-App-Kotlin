@@ -50,7 +50,7 @@ class ListFragment : Fragment(), SearchView.OnQueryTextListener {
         mToDoViewModel.getAllData.observe(viewLifecycleOwner) { data ->
             mSharedViewModel.checkIfDatabaseEmpty(data)
             adapter.setData(data)
-            binding.recyclerView.scheduleLayoutAnimation()
+            //binding.recyclerView.scheduleLayoutAnimation()
         }
 
         // Hide soft keyboard
@@ -92,13 +92,13 @@ class ListFragment : Fragment(), SearchView.OnQueryTextListener {
     }
 
     private fun setupRecyclerview() {
-        val recyclerView = binding.recyclerView
-        recyclerView.adapter = adapter
-        recyclerView.layoutManager =
+        //val recyclerView = binding.recyclerView
+        //recyclerView.adapter = adapter
+        //recyclerView.layoutManager =
             StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
 
         // Swipe to Delete
-        swipeToDelete(recyclerView)
+        //swipeToDelete(recyclerView)
     }
 
     private fun swipeToDelete(recyclerView: RecyclerView) {
